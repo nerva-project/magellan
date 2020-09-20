@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<Import Project="../../External/AngryWasp.Build/AngryWasp.Build.Application.targets"/>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="*"/>
+    <PackageReference Include="AngryWasp.Serializer" Version="*"/>
+    <PackageReference Include="AngryWasp.Cli" Version="*"/>
+  </ItemGroup>
+</Project>
