@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Xml.Linq;
+using AngryWasp.Cli;
 using AngryWasp.Cli.Args;
 using AngryWasp.Serializer;
 using AngryWasp.Serializer.Serializers;
@@ -77,6 +78,9 @@ namespace MagellanServer
 
             t.Start();
             r.Start(ds, port);
+            Log.Instance.Write("Ready...");
+            Application.RegisterCommands();
+            Application.Start();
         }
     }
 }
