@@ -38,6 +38,7 @@ namespace MagellanServer
             try
             {
                 HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
+                req.UserAgent = "keycdn-tools:https://getnerva.org";
                 req.Method = "GET";
                 HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
 
